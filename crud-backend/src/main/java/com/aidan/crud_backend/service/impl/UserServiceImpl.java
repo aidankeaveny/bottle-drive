@@ -2,7 +2,7 @@ package com.aidan.crud_backend.service.impl;
 
 import com.aidan.crud_backend.dto.UserDto;
 import com.aidan.crud_backend.entity.User;
-import com.aidan.crud_backend.exception.ResourceNotFoundException;
+import com.aidan.crud_backend.exceptions.ResourceNotFoundException;
 import com.aidan.crud_backend.mapper.UserMapper;
 import com.aidan.crud_backend.repository.UserRepository;
 import com.aidan.crud_backend.service.UserService;
@@ -12,30 +12,66 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Implementation of the {@link UserService} interface for managing User
+ * entities.
+ * <p>
+ * This service provides methods for creating, retrieving, updating, and
+ * deleting users. It interacts with the {@link UserRepository} for database
+ * operations and uses {@link UserMapper} for mapping between entity and DTO
+ * objects.
+ * </p>
+ */
 @Service
 @AllArgsConstructor
 public class UserServiceImpl implements UserService {
+    /**
+     * Repository for performing CRUD operations on User entities.
+     */
     private UserRepository userRepository;
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public UserDto createUser(UserDto userDto) {
+    public UserDto createUser(final UserDto userDto) {
         User user = UserMapper.mapToUser(userDto);
         User savedUser = userRepository.save(user);
         return UserMapper.mapToUserDto(savedUser);
     }
 
-    private User findUserById(Long pUserId) {
+    /**
+     * Finds a User by ID.
+     * <p>
+     * This is a helper method that retrieves a User from the database by
+     * their ID. If the User is not found, it throws a
+     * {@link ResourceNotFoundException}.
+     * </p>
+     *
+     * @param pUserId the ID of the User to retrieve
+     * @return the User entity found by the given ID
+     * @throws ResourceNotFoundException if no User with the given ID exists
+     */
+    private User findUserById(final Long pUserId) {
         return userRepository.findById(pUserId)
                 .orElseThrow(() ->
-                        new ResourceNotFoundException("User with given id: "+ pUserId + "does not exist"));
+                        new ResourceNotFoundException(
+                                "User with given id: "
+                                        + pUserId + "does not exist"));
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public UserDto getUserById(Long pUserId) {
+    public UserDto getUserById(final Long pUserId) {
         User user = findUserById(pUserId);
         return UserMapper.mapToUserDto(user);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public List<UserDto> getAllUsers() {
         List<User> users = userRepository.findAll();
@@ -44,8 +80,11 @@ public class UserServiceImpl implements UserService {
                 .collect(Collectors.toList());
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public UserDto updateUser(Long pUserId, UserDto pUserDto) {
+    public UserDto updateUser(final Long pUserId, final UserDto pUserDto) {
         User user = findUserById(pUserId);
         user.setFirstName(pUserDto.getFirstName());
         user.setLastName(pUserDto.getLastName());
@@ -55,8 +94,11 @@ public class UserServiceImpl implements UserService {
         return UserMapper.mapToUserDto(updatedUser);
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void deleteUser(Long pUserId) {
+    public void deleteUser(final Long pUserId) {
         User user = findUserById(pUserId);
         userRepository.delete(user);
     }
