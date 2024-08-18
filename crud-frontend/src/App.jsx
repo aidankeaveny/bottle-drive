@@ -1,8 +1,8 @@
 import './App.css'
-import EmployeeComponent from './components/EmployeeComponent'
+import UserComponent from './components/UserComponent'
 import FooterComponent from './components/FooterComponent'
 import HeaderComponent from './components/HeaderComponent'
-import ListEmployeeComponent from './components/ListEmployeeComponent'
+import ListUserComponent from './components/ListUserComponent'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
       <BrowserRouter>
         <HeaderComponent />
         <Routes>
-          <Route path='/' element={ <ListEmployeeComponent /> }></Route>
-          <Route path='/employees' element={ <ListEmployeeComponent /> }></Route>
-          <Route path='/add-employee' element={ <EmployeeComponent /> }></Route>
-          <Route path='/edit-employee/:id' element={ <EmployeeComponent /> }></Route>
+          <Route path='/' element={ <ListUserComponent /> }></Route>
+          <Route path='/users' element={ <ListUserComponent /> }></Route>
+          <Route path='/add-user' element={ <UserComponent /> }></Route>
+          <Route path='/edit-user/:id' element={ <UserComponent /> }></Route>
         </Routes>
         <FooterComponent />
       </BrowserRouter>

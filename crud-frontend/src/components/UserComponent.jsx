@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 import {
-  createEmployee,
-  getEmployee,
-  updateEmployee,
-} from "../services/EmployeeService";
+  createUser,
+  getUser,
+  updateUser,
+} from "../services/UserService";
 import { useNavigate, useParams } from "react-router-dom";
 
-const EmployeeComponent = () => {
+const UserComponent = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
@@ -22,39 +22,39 @@ const EmployeeComponent = () => {
 
   useEffect(() => {
     if (id) {
-      getEmployee(id)
+      getUser(id)
         .then((response) => {
           setFirstName(response.data.firstName);
           setLastName(response.data.lastName);
           setEmail(response.data.email);
         })
         .catch((error) => {
-          console.error("Error while fetching employee", error);
+          console.error("Error while fetching user", error);
         });
     }
   }, [id]);
 
-  function saveOrUpdateEmployee(e) {
+  function saveOrUpdateUser(e) {
     e.preventDefault();
 
     if (validateForm()) {
-      const employee = { firstName, lastName, email };
-      console.log(employee);
+      const user = { firstName, lastName, email };
+      console.log(user);
       if (id) {
-        updateEmployee(id, employee).then((response) => {
-            console.log("Employee updated successfully",response.data);
-            navigator('/employees');
+        updateUser(id, user).then((response) => {
+            console.log("User updated successfully",response.data);
+            navigator('/users');
         }).catch((error) => {
-            console.error("Error while updating employee", error);
+            console.error("Error while updating user", error);
         });
       } else {
-        createEmployee(employee)
+        createUser(user)
         .then((response) => {
-          console.log("Employee added successfully", response.data);
-          navigator("/employees");
+          console.log("User added successfully", response.data);
+          navigator("/users");
         })
         .catch((error) => {
-          console.error("Error while adding employee", error);
+          console.error("Error while adding user", error);
         });
       }
     }
@@ -86,9 +86,9 @@ const EmployeeComponent = () => {
 
   function pageTitle() {
     if (id) {
-      return <h2 className="text-center">Update Employee</h2>;
+      return <h2 className="text-center">Update User</h2>;
     } else {
-      return <h2 className="text-center">Add Employee</h2>;
+      return <h2 className="text-center">Add User</h2>;
     }
   }
 
@@ -100,10 +100,10 @@ const EmployeeComponent = () => {
           {pageTitle()}
           <form>
             <div className="form-group mb-2">
-              <label className="form-label">Employee First Name</label>
+              <label className="form-label">User First Name</label>
               <input
                 type="text"
-                placeholder="Enter Employee First Name"
+                placeholder="Enter User First Name"
                 name="firstName"
                 value={firstName}
                 className={`form-control ${
@@ -116,10 +116,10 @@ const EmployeeComponent = () => {
               )}
             </div>
             <div className="form-group mb-2">
-              <label className="form-label">Employee Last Name</label>
+              <label className="form-label">User Last Name</label>
               <input
                 type="text"
-                placeholder="Enter Employee Last Name"
+                placeholder="Enter User Last Name"
                 name="lastName"
                 value={lastName}
                 className={`form-control ${
@@ -132,10 +132,10 @@ const EmployeeComponent = () => {
               )}
             </div>
             <div className="form-group mb-2">
-              <label className="form-label">Employee Email</label>
+              <label className="form-label">User Email</label>
               <input
                 type="text"
-                placeholder="Enter Employee Email"
+                placeholder="Enter User Email"
                 name="firstName"
                 value={email}
                 className={`form-control ${errors.email ? "is-invalid" : ""}`}
@@ -147,7 +147,7 @@ const EmployeeComponent = () => {
               <div>
                 <button
                   className="btn btn-success"
-                  onClick={saveOrUpdateEmployee}
+                  onClick={saveOrUpdateUser}
                 >
                   Submit
                 </button>
@@ -160,4 +160,4 @@ const EmployeeComponent = () => {
   );
 };
 
-export default EmployeeComponent;
+export default UserComponent;
