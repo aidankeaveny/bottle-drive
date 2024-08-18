@@ -37,13 +37,13 @@ jobs:
             cd crud-backend
             ./mvnw checkstyle:check
             
-    # - name: Run Findbugs with Maven
-    #   run: |
-    #         cd crud-backend
-    #         ./mvnw spotbugs:check
-
-    - name: Run tests with Maven
+    - name: Run Spotbugs with Maven
       run: |
             cd crud-backend
-            ./mvnw -B test
+            ./mvnw spotbugs:check
+
+    # - name: Run tests with Maven
+    #   run: |
+    #         cd crud-backend
+    #         ./mvnw -B test
       
