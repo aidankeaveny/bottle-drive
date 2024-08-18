@@ -23,7 +23,6 @@ public class UserMapper {
      */
     protected UserMapper() {
         // prevents calls from subclass
-        throw new UnsupportedOperationException();
     }
 
     /**

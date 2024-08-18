@@ -2,6 +2,7 @@ package com.aidan.crud_backend.controller;
 
 import com.aidan.crud_backend.dto.UserDto;
 import com.aidan.crud_backend.service.UserService;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +26,9 @@ import java.util.List;
  * to perform the necessary business logic.
  * </p>
  */
+@SuppressFBWarnings(value = "EI_EXPOSE_REP2", justification =
+        "UserService is a Spring-managed bean and is assumed to "
+                + "be immutable.")
 @CrossOrigin("*")
 @AllArgsConstructor
 @RestController
