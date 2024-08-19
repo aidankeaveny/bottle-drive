@@ -1,3 +1,4 @@
+import React from 'react';
 import './App.css'
 import UserComponent from './components/UserComponent'
 import FooterComponent from './components/FooterComponent'
@@ -6,6 +7,9 @@ import ListUserComponent from './components/ListUserComponent'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
+
+  // Introduce an unused variable
+  const unusedVariable = "This is a test";
 
   return (
     <>
