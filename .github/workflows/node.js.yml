@@ -38,3 +38,7 @@ jobs:
       run: |
         cd crud-frontend
         npm test
+    - name: Run EsLint
+      run: |
+        cd crud-frontend
+        npm run lint

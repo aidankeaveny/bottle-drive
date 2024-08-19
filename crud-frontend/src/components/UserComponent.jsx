@@ -148,6 +148,7 @@ const UserComponent = () => {
                 <button
                   className="btn btn-success"
                   onClick={saveOrUpdateUser}
+                  type="button"
                 >
                   Submit
                 </button>

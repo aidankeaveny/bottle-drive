@@ -1,4 +1,3 @@
-
 const FooterComponent = () => {
   return (
     <div>
