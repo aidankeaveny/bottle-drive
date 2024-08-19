@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState } from "react";
 import {
   createUser,
@@ -149,6 +148,7 @@ const UserComponent = () => {
                 <button
                   className="btn btn-success"
                   onClick={saveOrUpdateUser}
+                  type="button"
                 >
                   Submit
                 </button>

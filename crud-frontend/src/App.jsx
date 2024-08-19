@@ -1,16 +1,12 @@
-import React from 'react';
-import './App.css'
-import UserComponent from './components/UserComponent'
-import FooterComponent from './components/FooterComponent'
-import HeaderComponent from './components/HeaderComponent'
-import ListUserComponent from './components/ListUserComponent'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import './App.css';
+import UserComponent from './components/UserComponent'; // eslint-disable-line no-unused-vars
+import FooterComponent from './components/FooterComponent';// eslint-disable-line no-unused-vars
+import HeaderComponent from './components/HeaderComponent';// eslint-disable-line no-unused-vars
+import ListUserComponent from './components/ListUserComponent';// eslint-disable-line no-unused-vars
+import { BrowserRouter, Route, Routes } from 'react-router-dom';// eslint-disable-line no-unused-vars
 
 function App() {
-
-  // Introduce an unused variable
-  const unusedVariable = "This is a test";
-
+  
   return (
     <>
       <BrowserRouter>

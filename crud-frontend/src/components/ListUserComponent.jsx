@@ -1,4 +1,3 @@
-import React from 'react';
 import { useEffect, useState } from "react";
 import { listUsers, deleteUser } from "../services/UserService";
 import { useNavigate } from "react-router-dom";
@@ -45,7 +44,7 @@ const ListUserComponent = () => {
   return (
     <div className="container">
       <h2 className="text-center">User List</h2>
-      <button className="btn btn-primary mb-2" onClick={addNewUser}>
+      <button className="btn btn-primary mb-2" type="button" onClick={addNewUser}>
         Add User
       </button>
       <table className="table table-striped table-bordered">
@@ -68,12 +67,14 @@ const ListUserComponent = () => {
               <td>
                 <button
                   className="btn btn-info"
+                  type="button"
                   onClick={() => updateUser(user.id)}
                 >
                   Update
                 </button>
                 <button
                   className="btn btn-danger"
+                  type="button"
                   onClick={() => removeUser(user.id)}
                   style={{ marginLeft: "10px" }}
                 >

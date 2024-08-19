@@ -1,42 +1,32 @@
 import globals from "globals";
 import js from "@eslint/js";
-import react from "@eslint-react/eslint-plugin";
+import react from "@eslint-react/eslint-plugin"; // Make sure this is the correct import
 
 export default [
   js.configs.recommended,
   {
     files: ["**/*.{js,mjs,cjs,jsx}"],
-    ...react.configs.recommended,
-      languageOptions: { 
-        globals: globals.browser,
-        parserOptions: {
-          ecmaVersion: 2021,
-          sourceType: "module",
-          ecmaFeatures: {
-            jsx: true,
-          },
+    languageOptions: { 
+      globals: globals.browser,
+      parserOptions: {
+        ecmaVersion: 2021,
+        sourceType: "module",
+        ecmaFeatures: {
+          jsx: true,
         },
       },
-
-    // ignores: [
-    //   "assets/**", 
-    //   "node_modules/**", 
-    //   "dist/**", 
-    //   ".vite/**", 
-    //   ".cache/**",
-    //   "build/**"
-    // ],
+    },
+    plugins: {
+      react: react,
+    },
+    settings: {
+      react: {
+        version: "detect", // Automatically detect the React version
+      },
+    },
+    rules: {
+      "semi": ["error", "always"],
+    },
+    ...react.configs.recommended,
   },
-  
-  // {
-  //   plugins: {
-  //     react: pluginReact,
-  //   },
-  //   settings: {
-  //     react: {
-  //       version: "detect",  // Automatically detect the React version
-  //     },
-  //   },
-  // },
-  // pluginReact.configs.flat.recommended,
 ];
