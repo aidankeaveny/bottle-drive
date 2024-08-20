@@ -29,6 +29,7 @@ const UserComponent = () => {
           setEmail(response.data.email);
         })
         .catch((error) => {
+          // TODO: fix error
           console.error("Error while fetching user", error);
         });
     }
@@ -36,10 +37,9 @@ const UserComponent = () => {
 
   function saveOrUpdateUser(e) {
     e.preventDefault();
-
+    // TODO: Take out console statements
     if (validateForm()) {
       const user = { firstName, lastName, email };
-      console.log(user);
       if (id) {
         updateUser(id, user).then((response) => {
             console.log("User updated successfully",response.data);

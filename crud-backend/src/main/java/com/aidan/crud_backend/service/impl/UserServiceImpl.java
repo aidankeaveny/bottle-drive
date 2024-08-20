@@ -103,4 +103,14 @@ public class UserServiceImpl implements UserService {
         userRepository.delete(user);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Integer countUsers() {
+        // todo: check which users are dropped off and add it
+        // todo: count number of bottles for each user
+        return (int) userRepository.count();
+    }
+
 }

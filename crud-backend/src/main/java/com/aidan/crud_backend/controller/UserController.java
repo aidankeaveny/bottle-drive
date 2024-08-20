@@ -134,4 +134,19 @@ public class UserController {
         return ResponseEntity.ok("user deleted successfully");
     }
 
+    /**
+     * Count the number of Users.
+     * <p>
+     * This endpoint handles HTTP GET requests to count the number of Users
+     * in the system. It returns the total count as an integer with HTTP status
+     * 200 (OK).
+     * </p>
+     *
+     * @return the total count of Users with HTTP status 200
+     */
+    @GetMapping("/count")
+    public ResponseEntity<Integer> countUsers() {
+        return ResponseEntity.ok(userService.countUsers());
+    }
+
 }

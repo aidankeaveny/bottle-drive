@@ -73,4 +73,15 @@ public interface UserService {
      * @param pUserId the ID of the user to delete
      */
     void deleteUser(Long pUserId);
+
+    /**
+     * Counts the number of users in the system.
+     * <p>
+     * The implementation should return the total number of users
+     * currently stored in the data source.
+     * </p>
+     *
+     * @return the total number of users
+     */
+    Integer countUsers();
 }
