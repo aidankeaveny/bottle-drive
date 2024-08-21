@@ -51,9 +51,10 @@ const ListUserComponent = () => {
         <thead>
           <tr>
             <th>User Id</th>
-            <th>User First Name</th>
-            <th>User Last Name</th>
+            <th>User Name</th>
             <th>User Email</th>
+            <th>Number of Bottles</th>
+            <th>Address</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -61,9 +62,10 @@ const ListUserComponent = () => {
           {users.map((user) => (
             <tr key={user.id}>
               <td>{user.id}</td>
-              <td>{user.firstName}</td>
-              <td>{user.lastName}</td>
+              <td>{user.name}</td>
               <td>{user.email}</td>
+              <td>{user.numberOfBottles}</td>
+              <td>{user.address}</td>
               <td>
                 <button
                   className="btn btn-info"
