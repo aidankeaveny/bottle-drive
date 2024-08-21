@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { getNumberOfUsers } from "../services/UserService";
+import { getNumberOfUsers } from "../../services/UserService";
 import "animate.css";
 
 const HomeComponent = () => {
