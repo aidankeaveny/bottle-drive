@@ -1,21 +1,19 @@
 import { useEffect, useState } from "react";
-import {
-  createUser,
-  getUser,
-  updateUser,
-} from "../services/UserService";
+import { createUser, getUser, updateUser } from "../services/UserService";
 import { useNavigate, useParams } from "react-router-dom";
 
 const UserComponent = () => {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [numberOfBottles, setNumberOfBottles] = useState(0);
+  const [address, setAddress] = useState("");
 
   const { id } = useParams();
   const [errors, setErrors] = useState({
-    firstName: "",
-    lastName: "",
+    name: "",
     email: "",
+    numberOfBottles: "",
+    address: "",
   });
 
   const navigator = useNavigate();
@@ -24,9 +22,10 @@ const UserComponent = () => {
     if (id) {
       getUser(id)
         .then((response) => {
-          setFirstName(response.data.firstName);
-          setLastName(response.data.lastName);
+          setName(response.data.name);
           setEmail(response.data.email);
+          setNumberOfBottles(response.data.numberOfBottles);
+          setAddress(response.data.address);
         })
         .catch((error) => {
           // TODO: fix error
@@ -39,45 +38,53 @@ const UserComponent = () => {
     e.preventDefault();
     // TODO: Take out console statements
     if (validateForm()) {
-      const user = { firstName, lastName, email };
+      const user = { name, email, numberOfBottles, address };
       if (id) {
-        updateUser(id, user).then((response) => {
-            console.log("User updated successfully",response.data);
-            navigator('/users');
-        }).catch((error) => {
+        updateUser(id, user)
+          .then((response) => {
+            console.log("User updated successfully", response.data);
+            navigator("/");
+          })
+          .catch((error) => {
             console.error("Error while updating user", error);
-        });
+          });
       } else {
         createUser(user)
-        .then((response) => {
-          console.log("User added successfully", response.data);
-          navigator("/users");
-        })
-        .catch((error) => {
-          console.error("Error while adding user", error);
-        });
+          .then((response) => {
+            console.log("User added successfully", response.data);
+            navigator("/");
+          })
+          .catch((error) => {
+            console.error("Error while adding user", error);
+          });
       }
     }
   }
   function validateForm() {
     let valid = true;
     const errorsCopy = { ...errors };
-    if (firstName.trim()) {
+    if (name.trim()) {
       errorsCopy.firstName = "";
     } else {
-      errorsCopy.firstName = "First Name is required";
-      valid = false;
-    }
-    if (lastName.trim()) {
-      errorsCopy.lastName = "";
-    } else {
-      errorsCopy.lastName = "Last Name is required";
+      errorsCopy.firstName = "Name is required";
       valid = false;
     }
     if (email.trim()) {
       errorsCopy.email = "";
     } else {
       errorsCopy.email = "Email is required";
+      valid = false;
+    }
+    if (numberOfBottles.trim()) {
+      errorsCopy.numberOfBottles = "";
+    } else {
+      errorsCopy.numberOfBottles = "Last Name is required";
+      valid = false;
+    }
+    if (address.trim()) {
+      errorsCopy.address = "";
+    } else {
+      errorsCopy.address = "Last Name is required";
       valid = false;
     }
     setErrors(errorsCopy);
@@ -100,43 +107,25 @@ const UserComponent = () => {
           {pageTitle()}
           <form>
             <div className="form-group mb-2">
-              <label className="form-label">User First Name</label>
+              <label className="form-label">Name</label>
               <input
                 type="text"
                 placeholder="Enter User First Name"
-                name="firstName"
-                value={firstName}
-                className={`form-control ${
-                  errors.firstName ? "is-invalid" : ""
-                }`}
-                onChange={(e) => setFirstName(e.target.value)}
+                name="name"
+                value={name}
+                className={`form-control ${errors.name ? "is-invalid" : ""}`}
+                onChange={(e) => setName(e.target.value)}
               />
-              {errors.firstName && (
-                <div className="invalid-feedback"> {errors.firstName} </div>
+              {errors.name && (
+                <div className="invalid-feedback"> {errors.name} </div>
               )}
             </div>
             <div className="form-group mb-2">
-              <label className="form-label">User Last Name</label>
-              <input
-                type="text"
-                placeholder="Enter User Last Name"
-                name="lastName"
-                value={lastName}
-                className={`form-control ${
-                  errors.lastName ? "is-invalid" : ""
-                }`}
-                onChange={(e) => setLastName(e.target.value)}
-              />
-              {errors.lastName && (
-                <div className="invalid-feedback"> {errors.lastName} </div>
-              )}
-            </div>
-            <div className="form-group mb-2">
-              <label className="form-label">User Email</label>
+              <label className="form-label">Email</label>
               <input
                 type="text"
                 placeholder="Enter User Email"
-                name="firstName"
+                name="email"
                 value={email}
                 className={`form-control ${errors.email ? "is-invalid" : ""}`}
                 onChange={(e) => setEmail(e.target.value)}
@@ -145,6 +134,41 @@ const UserComponent = () => {
                 <div className="invalid-feedback"> {errors.email} </div>
               )}
               <div>
+                <div className="form-group mb-2">
+                  <label className="form-label">Number of Bottles</label>
+                  <input
+                    type="number"
+                    placeholder="Enter Number of Bottles"
+                    name="numberOfBottles"
+                    value={numberOfBottles}
+                    className={`form-control ${
+                      errors.lastName ? "is-invalid" : ""
+                    }`}
+                    onChange={(e) => setNumberOfBottles(e.target.value)}
+                  />
+                  {errors.lastName && (
+                    <div className="invalid-feedback">
+                      {" "}
+                      {errors.numberOfBottles}{" "}
+                    </div>
+                  )}
+                </div>
+                <div className="form-group mb-2">
+                  <label className="form-label">Address</label>
+                  <input
+                    type="text"
+                    placeholder="Enter Address"
+                    name="address"
+                    value={address}
+                    className={`form-control ${
+                      errors.name ? "is-invalid" : ""
+                    }`}
+                    onChange={(e) => setAddress(e.target.value)}
+                  />
+                  {errors.name && (
+                    <div className="invalid-feedback"> {errors.address} </div>
+                  )}
+                </div>
                 <button
                   className="btn btn-success"
                   onClick={saveOrUpdateUser}

@@ -34,9 +34,10 @@ public class UserMapper {
     public static UserDto mapToUserDto(final User user) {
         return new UserDto(
                 user.getId(),
-                user.getFirstName(),
-                user.getLastName(),
-                user.getEmail()
+                user.getName(),
+                user.getEmail(),
+                user.getNumberOfBottles(),
+                user.getAddress()
         );
     }
 
@@ -49,9 +50,10 @@ public class UserMapper {
     public static User mapToUser(final UserDto userDto) {
         return new User(
                 userDto.getId(),
-                userDto.getFirstName(),
-                userDto.getLastName(),
-                userDto.getEmail()
+                userDto.getName(),
+                userDto.getEmail(),
+                userDto.getNumberOfBottles(),
+                userDto.getAddress()
         );
     }
 }

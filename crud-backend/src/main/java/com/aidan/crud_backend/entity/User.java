@@ -54,7 +54,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "users")
+@Table(name = "donors")
 public class User {
 
     /**
@@ -74,17 +74,9 @@ public class User {
      * This field is mapped to the "first_name" column in the "users" table.
      * </p>
      */
-    @Column(name = "first_name")
-    private String firstName;
+    @Column(name = "name")
+    private String name;
 
-    /**
-     * The last name of the user.
-     * <p>
-     * This field is mapped to the "last_name" column in the "users" table.
-     * </p>
-     */
-    @Column(name = "last_name")
-    private String lastName;
 
     /**
      * The email address of the user.
@@ -94,6 +86,26 @@ public class User {
      * unique across all users.
      * </p>
      */
-    @Column(name = "email_id", nullable = false, unique = true)
+    @Column(name = "email_id", nullable = false)
     private String email;
+
+    /**
+     * The number of bottles of blood donated by the user.
+     * <p>
+     * This field is mapped to the "number_of_bottles" column
+     * in the "users" table.
+     * </p>
+     */
+    @Column(name = "num_of_bottles")
+    private Integer numberOfBottles;
+
+    /**
+     * The address of the user.
+     * <p>
+     *     This field is mapped to the "address" column
+     *     in the "users" table.
+     * </p>
+     */
+    @Column(name = "address")
+    private String address;
 }

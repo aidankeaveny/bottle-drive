@@ -49,13 +49,17 @@ public class UserDto {
     /**
      * The first name of the user.
      */
-    private String firstName;
-    /**
-     * The last name of the user.
-     */
-    private String lastName;
+    private String name;
     /**
      * The email address of the user.
      */
     private String email;
+    /**
+     * The number of bottles the user has donated.
+     */
+    private Integer numberOfBottles;
+    /**
+     * The address of the user.
+     */
+    private String address;
 }
