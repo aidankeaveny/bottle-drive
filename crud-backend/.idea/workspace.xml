@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ebffd8e0-7250-4e70-9b23-09e883c5af1f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/CrudBackendApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/controller/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/dto/UserDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/dto/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/entity/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/exceptions/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/exceptions/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/mapper/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/repository/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/service/impl/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/aidan/crud_backend/service/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/aidan/crud_backend/CrudBackendApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/aidan/crud_backend/package-info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/_metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/axios.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/axios.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/chunk-32E4H3EV.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/chunk-32E4H3EV.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/chunk-G3PMV62Z.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/chunk-G3PMV62Z.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/chunk-TNTPHDQH.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/chunk-TNTPHDQH.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/react-dom_client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/react-dom_client.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/react-router-dom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/react-router-dom.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/react.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/.vite/deps/react.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/eslint.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/App.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/components/FooterComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/components/HeaderComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/components/HomeComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/components/ListUserComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/components/UserComponent.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/main.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/src/services/UserService.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/test/App.test.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../crud-frontend/vitest.config.ts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;aidankeaveny&quot;
+  }
+}</component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/aidankeaveny/crud-app.git&quot;,
+    &quot;accountId&quot;: &quot;16242da7-e0f2-4f60-b844-e89af8f35cbf&quot;
+  }
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2khfgR4EJsLt3JEW8BUWHGJy33g" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;Spring Boot.CrudBackendApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;expand-frontend&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CrudBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="crud-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.aidan.crud_backend.CrudBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.387" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.387" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ebffd8e0-7250-4e70-9b23-09e883c5af1f" name="Changes" comment="" />
+      <created>1723740842302</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723740842302</updated>
+      <workItem from="1723740843906" duration="14577000" />
+      <workItem from="1723843095207" duration="6067000" />
+      <workItem from="1723911532719" duration="331000" />
+      <workItem from="1723911899414" duration="322000" />
+      <workItem from="1723912242139" duration="688000" />
+      <workItem from="1723913042518" duration="11096000" />
+      <workItem from="1723977522058" duration="1896000" />
+      <workItem from="1723994387698" duration="320000" />
+      <workItem from="1723994751559" duration="733000" />
+      <workItem from="1723995523977" duration="929000" />
+      <workItem from="1723996529322" duration="869000" />
+      <workItem from="1723997584897" duration="601000" />
+      <workItem from="1723998212442" duration="207000" />
+      <workItem from="1723998458949" duration="190000" />
+      <workItem from="1723998670143" duration="480000" />
+      <workItem from="1723999272092" duration="613000" />
+      <workItem from="1724000116913" duration="348000" />
+      <workItem from="1724000479667" duration="660000" />
+      <workItem from="1724001169729" duration="62000" />
+      <workItem from="1724002277100" duration="240000" />
+      <workItem from="1724002532973" duration="505000" />
+      <workItem from="1724170381928" duration="4057000" />
+      <workItem from="1724232990752" duration="1137000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+        <entry key="c22e6b75-0c91-45ec-9b3f-91afd4fba183">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/ak11/Desktop/Projects/full-stack/crud-backend" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.hibernate.PropertyValueException" package="org.hibernate" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/crud_backend$CrudBackendApplication.ic" NAME="CrudBackendApplication Coverage Results" MODIFIED="1723757045212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
