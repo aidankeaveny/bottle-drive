@@ -10,7 +10,7 @@
  * <p>
  * For example, this package includes:
  * <ul>
- *     <li>{@link com.aidan.crud_backend.controller.UserController} -
+ *     <li>{@link com.aidan.backend.controller.UserController} -
  *     Manages user-related operations including creating,
  *     retrieving, updating, and deleting user records.</li>
  * </ul>
@@ -22,4 +22,4 @@
  *
  * @since 1.0
  */
-package com.aidan.crud_backend.controller;
+package com.aidan.backend.controller;

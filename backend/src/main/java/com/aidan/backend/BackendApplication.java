@@ -1,4 +1,4 @@
-package com.aidan.crud_backend;
+package com.aidan.backend;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,7 +17,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * </p>
  */
 @SpringBootApplication
-public class CrudBackendApplication {
+public class BackendApplication {
 
     /**
      * Protected constructor to prevent instantiation.
@@ -47,7 +47,7 @@ public class CrudBackendApplication {
      * @param args command-line arguments passed to the application
      */
     public static void main(final String[] args) {
-        SpringApplication.run(CrudBackendApplication.class, args);
+        SpringApplication.run(BackendApplication.class, args);
     }
 
 }

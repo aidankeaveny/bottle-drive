@@ -9,7 +9,7 @@
  * <p>
  * For example, the package includes:
  * <ul>
- *     <li>{@link com.aidan.crud_backend.dto.UserDto} -
+ *     <li>{@link com.aidan.backend.dto.UserDto} -
  *     Represents user information, including ID, first name,
  *     last name, and email.</li>
  * </ul>
@@ -21,4 +21,4 @@
  *
  * @since 1.0
  */
-package com.aidan.crud_backend.dto;
+package com.aidan.backend.dto;

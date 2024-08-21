@@ -13,9 +13,9 @@
  * <p>
  * For example, this package includes:
  * <ul>
- *     <li>{@link com.aidan.crud_backend.repository.UserRepository} -
+ *     <li>{@link com.aidan.backend.repository.UserRepository} -
  *     Provides CRUD operations and data access methods for the
- *     {@link com.aidan.crud_backend.entity.User} entity.</li>
+ *     {@link com.aidan.backend.entity.User} entity.</li>
  * </ul>
  * </p>
  * <p>
@@ -25,4 +25,4 @@
  *
  * @since 1.0
  */
-package com.aidan.crud_backend.repository;
+package com.aidan.backend.repository;

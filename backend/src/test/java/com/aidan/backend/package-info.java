@@ -1,6 +1,6 @@
 /**
  * Contains the unit and integration tests for the
- * {@code com.aidan.crud_backend} package.
+ * {@code com.aidan.backend} package.
  * <p>
  * This package includes test classes that verify the functionality and behavior
  * of the components within the {@code com.aidan.crud_backend} package.
@@ -10,9 +10,9 @@
  * <p>
  * Example classes in this package may include:
  * <ul>
- *     <li>{@link com.aidan.crud_backend.CrudBackendApplicationTests} - Tests
+ *     <li>{@link com.aidan.backend.BackendApplicationTests} - Tests
  *     the application context loading.</li>
  * </ul>
  * </p>
  */
-package com.aidan.crud_backend;
+package com.aidan.backend;

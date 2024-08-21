@@ -1,7 +1,7 @@
-package com.aidan.crud_backend.mapper;
+package com.aidan.backend.mapper;
 
-import com.aidan.crud_backend.dto.UserDto;
-import com.aidan.crud_backend.entity.User;
+import com.aidan.backend.dto.UserDto;
+import com.aidan.backend.entity.User;
 
 /**
  * Utility class for mapping between User and UserDto objects.

@@ -1,4 +1,4 @@
-package com.aidan.crud_backend.exceptions;
+package com.aidan.backend.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

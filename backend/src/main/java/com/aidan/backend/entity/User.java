@@ -1,4 +1,4 @@
-package com.aidan.crud_backend.entity;
+package com.aidan.backend.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -45,9 +45,9 @@ import lombok.Setter;
  * annotations are used to define the primary key and its generation strategy.
  * </p>
  *
- * @see com.aidan.crud_backend.dto.UserDto
- * @see com.aidan.crud_backend.repository.UserRepository
- * @see com.aidan.crud_backend.service.UserService
+ * @see com.aidan.backend.dto.UserDto
+ * @see com.aidan.backend.repository.UserRepository
+ * @see com.aidan.backend.service.UserService
  */
 @Getter
 @Setter

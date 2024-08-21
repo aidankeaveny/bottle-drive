@@ -1,11 +1,11 @@
-package com.aidan.crud_backend.service.impl;
+package com.aidan.backend.service.impl;
 
-import com.aidan.crud_backend.dto.UserDto;
-import com.aidan.crud_backend.entity.User;
-import com.aidan.crud_backend.exceptions.ResourceNotFoundException;
-import com.aidan.crud_backend.mapper.UserMapper;
-import com.aidan.crud_backend.repository.UserRepository;
-import com.aidan.crud_backend.service.UserService;
+import com.aidan.backend.dto.UserDto;
+import com.aidan.backend.entity.User;
+import com.aidan.backend.exceptions.ResourceNotFoundException;
+import com.aidan.backend.mapper.UserMapper;
+import com.aidan.backend.repository.UserRepository;
+import com.aidan.backend.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

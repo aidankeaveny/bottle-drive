@@ -1,4 +1,4 @@
-package com.aidan.crud_backend.dto;
+package com.aidan.backend.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -34,8 +34,8 @@ import lombok.Setter;
  * no-argument constructor, and all-argument constructor.
  * </p>
  *
- * @see com.aidan.crud_backend.entity.User
- * @see com.aidan.crud_backend.service.UserService
+ * @see com.aidan.backend.entity.User
+ * @see com.aidan.backend.service.UserService
  */
 @Getter
 @Setter

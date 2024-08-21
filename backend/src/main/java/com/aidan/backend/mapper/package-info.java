@@ -10,9 +10,9 @@
  * <p>
  * For example, this package includes:
  * <ul>
- *     <li>{@link com.aidan.crud_backend.mapper.UserMapper} - Provides
- *     methods for mapping {@link com.aidan.crud_backend.entity.User}
- *     entities to {@link com.aidan.crud_backend.dto.UserDto} objects
+ *     <li>{@link com.aidan.backend.mapper.UserMapper} - Provides
+ *     methods for mapping {@link com.aidan.backend.entity.User}
+ *     entities to {@link com.aidan.backend.dto.UserDto} objects
  *     and vice versa.</li>
  * </ul>
  * </p>
@@ -23,4 +23,4 @@
  *
  * @since 1.0
  */
-package com.aidan.crud_backend.mapper;
+package com.aidan.backend.mapper;

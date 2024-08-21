@@ -10,7 +10,7 @@
  * <p>
  * For example, this package includes:
  * <ul>
- *     <li>{@link com.aidan.crud_backend.exceptions.ResourceNotFoundException} -
+ *     <li>{@link com.aidan.backend.exceptions.ResourceNotFoundException} -
  *     Indicates that a requested resource was not found in the
  *     application.</li>
  * </ul>
@@ -23,4 +23,4 @@
  *
  * @since 1.0
  */
-package com.aidan.crud_backend.exceptions;
+package com.aidan.backend.exceptions;

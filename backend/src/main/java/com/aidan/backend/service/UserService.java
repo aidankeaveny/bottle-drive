@@ -1,6 +1,6 @@
-package com.aidan.crud_backend.service;
+package com.aidan.backend.service;
 
-import com.aidan.crud_backend.dto.UserDto;
+import com.aidan.backend.dto.UserDto;
 
 import java.util.List;
 

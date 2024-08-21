@@ -1,10 +1,10 @@
-package com.aidan.crud_backend;
+package com.aidan.backend;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CrudBackendApplicationTests {
+class BackendApplicationTests {
     @Test
     void contextLoads() {
     }

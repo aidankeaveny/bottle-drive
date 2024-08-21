@@ -10,7 +10,7 @@
  * <p>
  * For example, this package includes:
  * <ul>
- *     <li>{@link com.aidan.crud_backend.entity.User} -
+ *     <li>{@link com.aidan.backend.entity.User} -
  *     Represents a user in the application with attributes such as ID,
  *     first name, last name, and email.</li>
  * </ul>
@@ -23,4 +23,4 @@
  *
  * @since 1.0
  */
-package com.aidan.crud_backend.entity;
+package com.aidan.backend.entity;

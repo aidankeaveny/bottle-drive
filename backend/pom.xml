@@ -9,10 +9,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>com.aidan</groupId>
-	<artifactId>crud-backend</artifactId>
+	<artifactId>backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>crud-backend</name>
-	<description>Demo project for Spring Boot CRUD project</description>
+	<name>backend</name>
+	<description>Demo project for Spring Boot project</description>
 	<url/>
 	<licenses>
 		<license/>

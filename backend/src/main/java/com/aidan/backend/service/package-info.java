@@ -11,9 +11,9 @@
  * <p>
  * For example, this package includes:
  * <ul>
- *     <li>{@link com.aidan.crud_backend.service.UserService} -
+ *     <li>{@link com.aidan.backend.service.UserService} -
  *     Defines service methods for managing
- *     {@link com.aidan.crud_backend.dto.UserDto} objects,
+ *     {@link com.aidan.backend.dto.UserDto} objects,
  *     including CRUD operations and business logic.</li>
  * </ul>
  * </p>
@@ -24,4 +24,4 @@
  *
  * @since 1.0
  */
-package com.aidan.crud_backend.service;
+package com.aidan.backend.service;

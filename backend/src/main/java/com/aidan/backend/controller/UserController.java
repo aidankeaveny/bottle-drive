@@ -1,7 +1,7 @@
-package com.aidan.crud_backend.controller;
+package com.aidan.backend.controller;
 
-import com.aidan.crud_backend.dto.UserDto;
-import com.aidan.crud_backend.service.UserService;
+import com.aidan.backend.dto.UserDto;
+import com.aidan.backend.service.UserService;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
