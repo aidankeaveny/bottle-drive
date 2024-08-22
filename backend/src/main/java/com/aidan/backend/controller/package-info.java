@@ -1,6 +1,6 @@
 /**
  * Contains REST controllers for handling HTTP requests and responses
- * in the CRUD backend application.
+ * in the backend application.
  * <p>
  * This package includes controllers that define RESTful endpoints
  * for managing resources in the application. Controllers

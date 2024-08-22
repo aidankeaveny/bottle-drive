@@ -1,5 +1,5 @@
 /**
- * Contains custom exception classes for the CRUD backend application.
+ * Contains custom exception classes for the backend application.
  * <p>
  * This package includes exceptions that are used to handle
  * specific error conditions in the application. Custom

@@ -1,6 +1,6 @@
 /**
  * Contains service implementation classes for business logic
- * and operations in the CRUD backend application.
+ * and operations in the backend application.
  * <p>
  * This package includes classes that provide concrete
  * implementations of the service interfaces defined in

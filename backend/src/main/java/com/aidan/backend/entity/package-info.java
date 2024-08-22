@@ -1,5 +1,5 @@
 /**
- * Contains JPA entity classes for the CRUD backend application.
+ * Contains JPA entity classes for the backend application.
  * <p>
  * This package includes classes that represent entities in the
  * application and are mapped to database tables.

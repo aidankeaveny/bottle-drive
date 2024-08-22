@@ -1,5 +1,5 @@
 /**
- * Contains Data Transfer Objects (DTOs) for the CRUD backend application.
+ * Contains Data Transfer Objects (DTOs) for the backend application.
  * <p>
  * This package includes DTOs that are used to transfer data between different
  * layers of the application, such as between the service layer

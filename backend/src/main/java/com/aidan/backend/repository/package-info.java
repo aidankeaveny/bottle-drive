@@ -1,11 +1,11 @@
 /**
  * Contains repository interfaces for data access and
- * persistence in the CRUD backend
+ * persistence in the backend
  * application.
  * <p>
  * This package includes interfaces that extend
  * {@link org.springframework.data.jpa.repository.JpaRepository}
- * to provide CRUD operations and custom queries for entities
+ * to provide operations and custom queries for entities
  * in the application.Repositories act as an abstraction layer
  * between the application's business logic and the database,
  * facilitating data access operations.
@@ -14,7 +14,7 @@
  * For example, this package includes:
  * <ul>
  *     <li>{@link com.aidan.backend.repository.UserRepository} -
- *     Provides CRUD operations and data access methods for the
+ *     Provides operations and data access methods for the
  *     {@link com.aidan.backend.entity.User} entity.</li>
  * </ul>
  * </p>

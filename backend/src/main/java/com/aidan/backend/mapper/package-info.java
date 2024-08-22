@@ -1,6 +1,6 @@
 /**
  * Contains mapper classes for transforming data between different
- * representations in the CRUD backend application.
+ * representations in the backend application.
  * <p>
  * This package includes classes responsible for converting entities
  * to data transfer objects (DTOs) and vice versa. Mappers help in the

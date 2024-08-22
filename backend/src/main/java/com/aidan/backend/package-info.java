@@ -1,5 +1,5 @@
 /**
- * Provides the entry point for the CRUD backend application.
+ * Provides the entry point for the backend application.
  * <p>
  * This package contains the main class
  * {@link com.aidan.backend.BackendApplication}

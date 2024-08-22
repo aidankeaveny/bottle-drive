@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * The entry point for the CRUD backend application.
+ * The entry point for the backend application.
  * <p>
  * This class contains the {@code main} method which is used to launch the
  * Spring Boot application. It is annotated with {@link SpringBootApplication}

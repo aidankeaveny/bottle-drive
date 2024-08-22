@@ -3,7 +3,7 @@
  * {@code com.aidan.backend} package.
  * <p>
  * This package includes test classes that verify the functionality and behavior
- * of the components within the {@code com.aidan.crud_backend} package.
+ * of the components within the {@code com.aidan.backend} package.
  * Tests are written using the JUnit 5 framework and
  * Spring Boot's testing support.
  * </p>

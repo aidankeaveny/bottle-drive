@@ -1,6 +1,6 @@
 /**
  * Contains service interfaces for business logic and
- * operations in the CRUD backend application.
+ * operations in the backend application.
  * <p>
  * This package includes interfaces that define the business
  * logic and service operations for different entities
@@ -14,7 +14,7 @@
  *     <li>{@link com.aidan.backend.service.UserService} -
  *     Defines service methods for managing
  *     {@link com.aidan.backend.dto.UserDto} objects,
- *     including CRUD operations and business logic.</li>
+ *     including operations and business logic.</li>
  * </ul>
  * </p>
  * <p>

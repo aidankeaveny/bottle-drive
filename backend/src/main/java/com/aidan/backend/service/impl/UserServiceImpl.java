@@ -26,7 +26,7 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class UserServiceImpl implements UserService {
     /**
-     * Repository for performing CRUD operations on User entities.
+     * Repository for performing operations on User entities.
      */
     private UserRepository userRepository;
 
