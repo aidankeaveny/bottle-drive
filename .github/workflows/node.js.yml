@@ -28,17 +28,17 @@ jobs:
     #     cache: 'npm'
     - name: Install dependencies
       run: |
-        cd crud-frontend
+        cd frontend
         npm ci
     - name: Build the project
       run: |
-        cd crud-frontend
+        cd frontend
         npm run build --if-present
     - name: Run tests
       run: |
-        cd crud-frontend
+        cd frontend
         npm test
     - name: Run EsLint
       run: |
-        cd crud-frontend
+        cd frontend
         npm run lint
