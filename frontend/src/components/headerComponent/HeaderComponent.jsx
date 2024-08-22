@@ -1,60 +1,35 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { Navbar } from "react-bootstrap";
+import { Navbar, Nav, Container, Button } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../App.css';
+
 const HeaderComponent = () => {
-  const navigator = useNavigate();
-  
+  const navigate = useNavigate();
+
   function toSignIn() {
-    navigator("/sign-in");
+    navigate("/sign-in");
   }
 
   return (
-      <header>
-        <Navbar bg="dark" variant="dark" expand="lg">
-          <a className="navbar-brand ml-5" href="/">
-            Bottle Drive
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <a className="nav-link" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/about">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className="ml-auto mr-3">
-            <button
-              className="btn btn-primary"
-              type="button"
-              onClick={toSignIn}
-            >
+    <header className="header">
+      <Navbar className="navbar-custom" expand="lg">
+        <Container>
+          <Navbar.Brand href="/">Bottle Drive</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link href="/contact">Contact</Nav.Link>
+            </Nav>
+            <Button variant="custom" onClick={toSignIn}>
               Sign In
-            </button>
-          </div>
-        </Navbar>
-      </header>
+            </Button>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
   );
 };
 

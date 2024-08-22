@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { createUser, getUser, updateUser } from "../../services/UserService";
 import { useNavigate, useParams } from "react-router-dom";
+import '../../App.css';
+
 
 const UserComponent = () => {
   const [name, setName] = useState("");

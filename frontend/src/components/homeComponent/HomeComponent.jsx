@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getNumberOfUsers } from "../../services/UserService";
 import "animate.css";
+import '../../App.css';
 
 const HomeComponent = () => {
   const navigator = useNavigate();

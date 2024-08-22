@@ -2,6 +2,8 @@ import React from "react";
 import { useEffect, useState } from "react";
 import { listUsers, deleteUser, updateUser } from "../../services/UserService";
 import { useNavigate } from "react-router-dom";
+import '../../App.css';
+
 
 const ListUserComponent = () => {
   const [users, setUsers] = useState([]);
