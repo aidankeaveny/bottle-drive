@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
-import UserComponent from './components/userComponent/UserComponent'; // eslint-disable-line no-unused-vars
-import FooterComponent from './components/footerComponent/FooterComponent';// eslint-disable-line no-unused-vars
-import HeaderComponent from './components/headerComponent/HeaderComponent';// eslint-disable-line no-unused-vars
-import ListUserComponent from './components/listUserComponent/ListUserComponent';// eslint-disable-line no-unused-vars
-import { BrowserRouter, Route, Routes } from 'react-router-dom';// eslint-disable-line no-unused-vars
-import HomeComponent from './components/homeComponent/HomeComponent';// eslint-disable-line no-unused-vars
+import UserComponent from './components/userComponent/UserComponent';
+import FooterComponent from './components/footerComponent/FooterComponent';
+import HeaderComponent from './components/headerComponent/HeaderComponent';
+import ListUserComponent from './components/listUserComponent/ListUserComponent';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import HomeComponent from './components/homeComponent/HomeComponent';
 
 function App() {
   
@@ -22,7 +23,7 @@ function App() {
         <FooterComponent />
       </BrowserRouter>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

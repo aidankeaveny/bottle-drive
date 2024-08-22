@@ -1,23 +1,22 @@
-import globals from "globals";
-import js from "@eslint/js";
-import react from "@eslint-react/eslint-plugin"; // Make sure this is the correct import
+// @ts-nocheck
+import react from 'eslint-plugin-react';
+
+// Begin fix
+react.configs.recommended.plugins = { react };
+react.configs.recommended.languageOptions = {
+  parserOptions: react.configs.recommended.parserOptions
+};
+delete react.configs.recommended.parserOptions;
+// End fix
 
 export default [
-  js.configs.recommended,
+  react.configs.recommended,
+  // Now add your own config
   {
-    files: ["**/*.{js,mjs,cjs,jsx}"],
-    languageOptions: { 
-      globals: globals.browser,
-      parserOptions: {
-        ecmaVersion: 2021,
-        sourceType: "module",
-        ecmaFeatures: {
-          jsx: true,
-        },
-      },
-    },
+    languageOptions: {},
+    files: [`**/*.{js,jsx,ts,tsx}`],
     plugins: {
-      react: react,
+      react
     },
     settings: {
       react: {
@@ -25,8 +24,7 @@ export default [
       },
     },
     rules: {
-      "semi": ["error", "always"],
+      'semi': ['error', 'always'], // Add semicolon rule
     },
-    ...react.configs.recommended,
-  },
+  }
 ];
