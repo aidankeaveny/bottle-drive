@@ -55,7 +55,7 @@ const HomeComponent = () => {
         <div className="col-6 text-center">
           <div className="card shadow-sm">
             <div className="card-body">
-              <h3 className="card-title">Number of Bottles Delivered</h3>
+              <h3 className="card-title">Number of Bottles Donated</h3>
               <h1
                 className="card-text animate__animated animate__bounce"
                 style={{ fontSize: "5rem" }}

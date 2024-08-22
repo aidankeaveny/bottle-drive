@@ -108,4 +108,14 @@ public class User {
      */
     @Column(name = "address")
     private String address;
+
+    /**
+     * Whether the bottles have been picked up
+     * <p>
+     *     This field is mapped to the "is_picked_up" column
+     *     in the "users" table.
+     * </p>
+     */
+    @Column(name = "is_picked_up")
+    private Boolean isDelivered;
 }

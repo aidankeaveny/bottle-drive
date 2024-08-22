@@ -62,4 +62,8 @@ public class UserDto {
      * The address of the user.
      */
     private String address;
+    /**
+     * Whether the bottles have been picked up.
+     */
+    private Boolean isDelivered;
 }

@@ -7,6 +7,7 @@ const UserComponent = () => {
   const [email, setEmail] = useState("");
   const [numberOfBottles, setNumberOfBottles] = useState(0);
   const [address, setAddress] = useState("");
+  const [isDelivered, setIsDelivered] = useState(false);
 
   const { id } = useParams();
   const [errors, setErrors] = useState({
@@ -14,6 +15,7 @@ const UserComponent = () => {
     email: "",
     numberOfBottles: "",
     address: "",
+    isDelivered: false,
   });
 
   const navigator = useNavigate();
@@ -26,6 +28,7 @@ const UserComponent = () => {
           setEmail(response.data.email);
           setNumberOfBottles(response.data.numberOfBottles);
           setAddress(response.data.address);
+          setIsDelivered(response.data.isDelivered);
         })
         .catch((error) => {
           // TODO: fix error
@@ -38,7 +41,7 @@ const UserComponent = () => {
     e.preventDefault();
     // TODO: Take out console statements
     if (validateForm()) {
-      const user = { name, email, numberOfBottles, address };
+      const user = { name, email, numberOfBottles, address, isDelivered };
       if (id) {
         updateUser(id, user)
           .then((response) => {
@@ -78,13 +81,13 @@ const UserComponent = () => {
     if (numberOfBottles.trim()) {
       errorsCopy.numberOfBottles = "";
     } else {
-      errorsCopy.numberOfBottles = "Last Name is required";
+      errorsCopy.numberOfBottles = "Number of Bottles is required";
       valid = false;
     }
     if (address.trim()) {
       errorsCopy.address = "";
     } else {
-      errorsCopy.address = "Last Name is required";
+      errorsCopy.address = "Address is required";
       valid = false;
     }
     setErrors(errorsCopy);

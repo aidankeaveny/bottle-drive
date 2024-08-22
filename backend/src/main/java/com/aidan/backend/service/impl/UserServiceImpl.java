@@ -76,7 +76,7 @@ public class UserServiceImpl implements UserService {
     public List<UserDto> getAllUsers() {
         List<User> users = userRepository.findAll();
 
-        return users.stream().map((user) -> UserMapper.mapToUserDto(user))
+        return users.stream().map(UserMapper::mapToUserDto)
                 .collect(Collectors.toList());
     }
 
@@ -90,6 +90,7 @@ public class UserServiceImpl implements UserService {
         user.setEmail(pUserDto.getEmail());
         user.setNumberOfBottles(pUserDto.getNumberOfBottles());
         user.setAddress(pUserDto.getAddress());
+        user.setIsDelivered(pUserDto.getIsDelivered());
         User updatedUser = userRepository.save(user);
 
         return UserMapper.mapToUserDto(updatedUser);
@@ -109,9 +110,13 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public Integer countUsers() {
-        // todo: check which users are dropped off and add it
-        // todo: count number of bottles for each user
-        return (int) userRepository.count();
+        int count = 0;
+        for (User user : userRepository.findAll()) {
+            if (user.getIsDelivered()) {
+                count += user.getNumberOfBottles();
+            }
+        }
+        return count;
     }
 
 }

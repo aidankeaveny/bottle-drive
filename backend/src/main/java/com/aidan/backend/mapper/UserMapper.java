@@ -37,7 +37,8 @@ public class UserMapper {
                 user.getName(),
                 user.getEmail(),
                 user.getNumberOfBottles(),
-                user.getAddress()
+                user.getAddress(),
+                user.getIsDelivered()
         );
     }
 
@@ -53,7 +54,8 @@ public class UserMapper {
                 userDto.getName(),
                 userDto.getEmail(),
                 userDto.getNumberOfBottles(),
-                userDto.getAddress()
+                userDto.getAddress(),
+                userDto.getIsDelivered()
         );
     }
 }

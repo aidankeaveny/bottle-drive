@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { listUsers, deleteUser } from "../../services/UserService";
+import { listUsers, deleteUser, updateUser } from "../../services/UserService";
 import { useNavigate } from "react-router-dom";
 
 const ListUserComponent = () => {
@@ -25,7 +25,7 @@ const ListUserComponent = () => {
     navigator("/add-user");
   }
 
-  function updateUser(id) {
+  function goToUpdateUser(id) {
     navigator(`/edit-user/${id}`);
   }
 
@@ -38,6 +38,33 @@ const ListUserComponent = () => {
       })
       .catch((error) => {
         console.error("Error while deleting user", error);
+      });
+  }
+
+  function toggleDeliveredStatus(id) {
+    const updatedUsers = users.map((user) => {
+      if (user.id === id) {
+        return {
+          ...user,
+          isDelivered: !user.isDelivered
+        };
+      }
+      return user;
+    });
+
+    const changedUser = updatedUsers.find((user) => user.id === id);
+    if (!changedUser) {
+      console.error("User not found");
+      return;
+    }
+
+    setUsers(updatedUsers);
+    updateUser(id, changedUser)
+      .then((response) => {
+        console.log("User updated successfully", response.data);
+      })
+      .catch((error) => {
+        console.error("Error while updating user", error);
       });
   }
 
@@ -55,6 +82,7 @@ const ListUserComponent = () => {
             <th>User Email</th>
             <th>Number of Bottles</th>
             <th>Address</th>
+            <th>Deliver(ed)</th>
             <th>Actions</th>
           </tr>
         </thead>
@@ -70,7 +98,16 @@ const ListUserComponent = () => {
                 <button
                   className="btn btn-info"
                   type="button"
-                  onClick={() => updateUser(user.id)}
+                  onClick={() => toggleDeliveredStatus(user.id)}
+                >
+                  {user.isDelivered ? "Unmark as Delivered" : "Mark as Delivered"}
+                </button>
+              </td>
+              <td>
+                <button
+                  className="btn btn-info"
+                  type="button"
+                  onClick={() => goToUpdateUser(user.id)}
                 >
                   Update
                 </button>
